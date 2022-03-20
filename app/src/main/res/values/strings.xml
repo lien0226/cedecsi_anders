@@ -3,4 +3,5 @@
     <string name="obtener_coordenadas">Obtener Coordenadas</string>
     <string name="latitud">Latitud:</string>
     <string name="longitud">Longitud:</string>
+    <string name="subir_coordenadas">Subir Coordenadas</string>
 </resources>
