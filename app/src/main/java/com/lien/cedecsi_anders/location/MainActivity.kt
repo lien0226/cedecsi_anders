@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         gpsProvider = GPSProvider(this)
+        restExecute = RestExecute()
         setupViews()
         setupListeners()
 
@@ -45,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         gpsProvider.onLocation={
+            location = it
             tvLatitud?.text = "${it.latitude}"
             tvLongitud?.text = "${it.longitude}"
         }
